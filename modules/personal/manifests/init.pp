@@ -46,4 +46,11 @@ class personal {
     group => 'users',
     creates => '/home/vagrant/.oh-my-zsh'
   }
+
+  file { "/home/vagrant/.ssh/config":
+    source => "puppet:///modules/arch/config",
+    path => "/home/vagrant/.ssh/config",
+    group => "users",
+    owner => "vagrant"
+  }
 }
