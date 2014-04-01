@@ -48,7 +48,7 @@ class personal {
   }
 
   file { "/home/vagrant/.ssh/config":
-    source => "puppet:///modules/arch/config",
+    source => "puppet:///modules/personal/config",
     path => "/home/vagrant/.ssh/config",
     group => "users",
     owner => "vagrant"
