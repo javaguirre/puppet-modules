@@ -33,6 +33,7 @@ class php::install {
              "$php_package-tidy",
              "$php_package-geoip",
              "$php_package-curl",
+             "$php_package-mysql", #FIXME Only Ubuntu
              "$php_package-xsl"]:
     ensure => present;
   }
